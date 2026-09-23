@@ -7,7 +7,7 @@ layer. Builds target 32-bit XP with a Pentium III baseline.
 
 - [Keytest](apps/keytest/README.md): a responsive fullscreen keyboard tester with
   white Noname Sans glyphs, input-dependent background colors, and a smiling
-  keycap icon.
+  keycap icon, and spoken key feedback.
 
 ## Setup
 
@@ -43,9 +43,15 @@ Run `just` to list recipes. All commands below assume mise is activated.
 | `just fmt` | Format Zig sources and the justfile |
 | `just iso` | Build and create `dist/keytest.iso` for UTM on macOS |
 | `just icon` | Regenerate the XP ICO from its PNG artwork |
+| `just voice` | Generate complete NATO words and key names with Kokoro through Bun |
+| `just voice letter-a control-shift` | Regenerate only the selected speech IDs |
+| `just voice-index` | Validate clips, refresh the embedded index and listening reels without TTS |
 
 Build output is `dist/keytest/keytest.exe` and `dist/keytest-xp32.zip`.
 `just build keytest` and `just iso keytest` also accept the app name explicitly.
+See the [voice asset guide](apps/keytest/assets/voice/README.md) for pronunciation
+words, generation settings, replacement recordings, and listening reels. All
+voice clips are embedded in the EXE and play through XP’s built-in audio API.
 
 ## Layout
 
@@ -56,8 +62,8 @@ shared/
   win32.zig            Shared XP-compatible Win32 ABI declarations
 scripts/
   *.nu                 Build, test, formatting, SDK bootstrap, and ISO orchestration
-  *.bun.ts             PE audit, ZIP packaging, and ICO export
-  *.test.ts            Build-audit regression tests
+  *.bun.ts             PE audit, ZIP packaging, ICO export, and voice generation
+  *.test.ts            Build-audit and audio-asset regression tests
 mise.toml              Pinned development tools
 justfile               Thin entry points into scripts/
 .github/workflows/     Build and test automation
@@ -73,6 +79,6 @@ Register new apps in the build and packaging scripts as they are added.
 
 GitHub Actions runs `just setup` and `just check` on Ubuntu for pushes to `main`,
 pull requests, and manual dispatch. It cross-compiles the XP executable, checks
-PE headers/imports/icon resources, runs two Zig tests and six Bun tests, and
+PE headers/imports/icon resources, runs four Zig tests and nine Bun tests, and
 uploads the portable ZIP as the `keytest-xp32` artifact. GUI behavior is verified
 separately in XP through UTM; CI does not run the Windows application.

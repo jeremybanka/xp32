@@ -34,3 +34,11 @@ iso app="keytest": (build app)
 # Regenerate the XP ICO from the existing PNG artwork.
 icon:
     bun scripts/export-icon.bun.ts
+
+# Generate complete NATO words and names for numbers, symbols, and controls.
+voice *ids:
+    bun scripts/generate-speech.bun.ts {{ quote(ids) }}
+
+# Validate assets, rebuild the embedded index, and refresh audition reels (no TTS).
+voice-index:
+    bun scripts/speech-index.bun.ts
