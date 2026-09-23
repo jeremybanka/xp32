@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@huggingface/transformers": "3.8.1",
     "fflate": "0.8.2",
+    "kokoro-js": "1.2.1",
     "sharp": "0.34.5"
   }
 }

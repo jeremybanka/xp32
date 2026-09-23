@@ -1,0 +1,1173 @@
+{
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+  "dtype": "fp32",
+  "voice": "af_heart",
+  "speed": 1,
+  "sampleRate": 24000,
+  "bits": 16,
+  "channels": 1,
+  "trimmed": false,
+  "clips": [
+    {
+      "id": "letter-a",
+      "spoken": "Alfa",
+      "prompt": "Alfa.",
+      "phonemes": "ˈælfə.",
+      "seconds": 1.45,
+      "sha256": "4371ac34845f81f729e7aaab358af685d1509852c1b818501491f7aa3cb3c160"
+    },
+    {
+      "id": "letter-b",
+      "spoken": "Bravo",
+      "prompt": "Bravo.",
+      "phonemes": "bɹˈɑːvoʊ.",
+      "seconds": 1.45,
+      "sha256": "1fbfee8766f9f81873ed185aec1b5930870de8ee1c65f0a7c27959c6030ad4a1"
+    },
+    {
+      "id": "letter-c",
+      "spoken": "Charlie",
+      "prompt": "Charlie.",
+      "phonemes": "tʃˈɑːɹli.",
+      "seconds": 1.425,
+      "sha256": "812a760884f7f039e02465932b63fc8b106f9994718c215f098bcf296a61fea7"
+    },
+    {
+      "id": "letter-d",
+      "spoken": "Delta",
+      "prompt": "Delta.",
+      "phonemes": "dˈɛltə.",
+      "seconds": 1.45,
+      "sha256": "0db09a1486738bc7cca3e742eb84ebaec3ddb14caaf740eb2c72796b65c0b079"
+    },
+    {
+      "id": "letter-e",
+      "spoken": "Echo",
+      "prompt": "Echo.",
+      "phonemes": "ˈɛkoʊ.",
+      "seconds": 1.4,
+      "sha256": "8101b08fcea679c88df82a43d96f5037f42be540369a04b33d74ed63fe856281"
+    },
+    {
+      "id": "letter-f",
+      "spoken": "Foxtrot",
+      "prompt": "Foxtrot.",
+      "phonemes": "fˈɑːkstɹɑːt.",
+      "seconds": 1.55,
+      "sha256": "d76754d5d359d9db2ba218458a622c4b6d5c03397dc890c342a3b336b0969871"
+    },
+    {
+      "id": "letter-g",
+      "spoken": "Golf",
+      "prompt": "Golf.",
+      "phonemes": "ɡˈɑːlf.",
+      "seconds": 1.375,
+      "sha256": "91fe93f20525346aef13ca6cdabcdb5d82104fa713b0d8edf1c040b2a5d50ec8"
+    },
+    {
+      "id": "letter-h",
+      "spoken": "Hotel",
+      "prompt": "Hotel.",
+      "phonemes": "hoʊtˈɛl.",
+      "seconds": 1.45,
+      "sha256": "9faa035300d735f443cf0269aaef303129672d9ada1e52beb444ff6eb4e88456"
+    },
+    {
+      "id": "letter-i",
+      "spoken": "India",
+      "prompt": "India.",
+      "phonemes": "ˈɪndiə.",
+      "seconds": 1.425,
+      "sha256": "4a7b0e95909e26046537c566096ded14c4944a646a8d59ef9c755338e9c08b95"
+    },
+    {
+      "id": "letter-j",
+      "spoken": "Juliett",
+      "prompt": "Juliett.",
+      "phonemes": "dʒˌuːlɪˈɛt.",
+      "seconds": 1.475,
+      "sha256": "bcd3bac655a9f36cf4b0ca740e686f4e8fb285837fa15677e95b09ce9f793a2a"
+    },
+    {
+      "id": "letter-k",
+      "spoken": "Kilo",
+      "prompt": "Kilo.",
+      "phonemes": "kˈiːloʊ.",
+      "seconds": 1.35,
+      "sha256": "58937af57f4c44bcb6fafd27439087850fc131966d82323ce70f63b5f0612fe0"
+    },
+    {
+      "id": "letter-l",
+      "spoken": "Lima",
+      "prompt": "Lima.",
+      "phonemes": "lˈiːmɐ.",
+      "seconds": 1.375,
+      "sha256": "563ceaf89668fac9593e1a697bfe2249257cdc002c5148db2b960fb2c6a13141"
+    },
+    {
+      "id": "letter-m",
+      "spoken": "Mike",
+      "prompt": "Mike.",
+      "phonemes": "mˈaɪk.",
+      "seconds": 1.325,
+      "sha256": "52dde33352b27f6591e6755d0a26d4f3dd827282c1b48b4a60785bc4016dbd4b"
+    },
+    {
+      "id": "letter-n",
+      "spoken": "November",
+      "prompt": "November.",
+      "phonemes": "noʊvˈɛmbɚ.",
+      "seconds": 1.475,
+      "sha256": "4ae2768b51eb572d3753bf967828b3e66c089a40f7ee6e2626c4f5ad14bc2bc8"
+    },
+    {
+      "id": "letter-o",
+      "spoken": "Oscar",
+      "prompt": "Oscar.",
+      "phonemes": "ˈɑːskɚ.",
+      "seconds": 1.475,
+      "sha256": "488e4e7a67607f6c05b1146ab98705353b3a0b0731b24d0b503e8f6a0173b4de"
+    },
+    {
+      "id": "letter-p",
+      "spoken": "Papa",
+      "prompt": "Papa.",
+      "phonemes": "pˈɑːpə.",
+      "seconds": 1.4,
+      "sha256": "c53dc7b46656f2a90ad8a1352e266c8a53c72b7127feb20831e73d889c111e36"
+    },
+    {
+      "id": "letter-q",
+      "spoken": "Quebec",
+      "prompt": "Quebec.",
+      "phonemes": "kwᵻbˈɛk.",
+      "seconds": 1.375,
+      "sha256": "d6e641c0167e92c0ad0e77d5c6c01ff00d45465744e226efc62f78fbd604afad"
+    },
+    {
+      "id": "letter-r",
+      "spoken": "Romeo",
+      "prompt": "Romeo.",
+      "phonemes": "ɹˈoʊmɪˌoʊ.",
+      "seconds": 1.425,
+      "sha256": "33411d2f211c5a748b97689052a09bff42f6c69f59b56785f7855b07a3f7e4b6"
+    },
+    {
+      "id": "letter-s",
+      "spoken": "Sierra",
+      "prompt": "Sierra.",
+      "phonemes": "siːˈɛɹə.",
+      "seconds": 1.45,
+      "sha256": "1fea73560b02521fa0d916666fa9d3253e8d060486626d9d23f1cec6d2f2da3a"
+    },
+    {
+      "id": "letter-t",
+      "spoken": "Tango",
+      "prompt": "Tango.",
+      "phonemes": "tˈæŋɡoʊ.",
+      "seconds": 1.4,
+      "sha256": "cfdb2f82b943bfd22b6d46aa3d94f079c4366a837ec62d3e5468852f58cc5569"
+    },
+    {
+      "id": "letter-u",
+      "spoken": "Uniform",
+      "prompt": "Uniform.",
+      "phonemes": "jˈuːnɪfˌɔːɹm.",
+      "seconds": 1.575,
+      "sha256": "e4958c61538840f7b66b8c7fc4b7d4393fc5607cebb3fa4c56b6ec05fa9524de"
+    },
+    {
+      "id": "letter-v",
+      "spoken": "Victor",
+      "prompt": "Victor.",
+      "phonemes": "vˈɪktɚ.",
+      "seconds": 1.475,
+      "sha256": "44d4c3eecf61049bb436e833a8e7423fb5ef53f3e0d96938b49521f14dc8f2a1"
+    },
+    {
+      "id": "letter-w",
+      "spoken": "Whiskey",
+      "prompt": "Whiskey.",
+      "phonemes": "wˈɪski.",
+      "seconds": 1.475,
+      "sha256": "7074e872538e66630638c55003dd7afe7f72765431f224c54683fbcea3ff6feb"
+    },
+    {
+      "id": "letter-x",
+      "spoken": "X-ray",
+      "prompt": "X-ray.",
+      "phonemes": "ˈɛksɹˈeɪ.",
+      "seconds": 1.45,
+      "sha256": "c318e1b5af4cbf39bf530815e0543b469a2b50dce61de18b36936ded5bfd1b50"
+    },
+    {
+      "id": "letter-y",
+      "spoken": "Yankee",
+      "prompt": "Yankee.",
+      "phonemes": "jˈæŋkiː.",
+      "seconds": 1.55,
+      "sha256": "2fe939748bf0a373e6fe5216b1df57958ab3cb20a57d21f68fcf8dfdd3d8e7f3"
+    },
+    {
+      "id": "letter-z",
+      "spoken": "Zulu",
+      "prompt": "Zulu.",
+      "phonemes": "zˈuːluː.",
+      "seconds": 1.425,
+      "sha256": "f5d84ea099bde9cd53d8b44c8a20444f77f0148f63fa971701b13bf55079392d"
+    },
+    {
+      "id": "number-0",
+      "spoken": "Zero",
+      "prompt": "Zero.",
+      "phonemes": "zˈiəɹoʊ.",
+      "seconds": 1.4,
+      "sha256": "0620c20996392be92992aaba84f605e146119b6e8ed8d5a966f53431e418cfdd"
+    },
+    {
+      "id": "number-1",
+      "spoken": "One",
+      "prompt": "One.",
+      "phonemes": "wˈʌn.",
+      "seconds": 1.25,
+      "sha256": "7c82877ec60184165fa78fcd66096793027d0a049d9bc52d7cc0c003f6cc653c"
+    },
+    {
+      "id": "number-2",
+      "spoken": "Two",
+      "prompt": "Two.",
+      "phonemes": "tˈuː.",
+      "seconds": 1.325,
+      "sha256": "90704f390914297fd9c95a1df973be14d3d392209738555ee599cb3c14af4d5c"
+    },
+    {
+      "id": "number-3",
+      "spoken": "Three",
+      "prompt": "Three.",
+      "phonemes": "θɹˈiː.",
+      "seconds": 1.375,
+      "sha256": "c7764c616d6b39af513b87d68ab3ae75c79f0302857c0914c58eccc35b43b290"
+    },
+    {
+      "id": "number-4",
+      "spoken": "Four",
+      "prompt": "Four.",
+      "phonemes": "fˈoːɹ.",
+      "seconds": 1.325,
+      "sha256": "9f21be4e4fb864689cb0bf3b6fa45b1f94e4714ac1448f906a6065f60b62fbbf"
+    },
+    {
+      "id": "number-5",
+      "spoken": "Five",
+      "prompt": "Five.",
+      "phonemes": "fˈaɪv.",
+      "seconds": 1.4,
+      "sha256": "ce8a7eeb15d2a214f7d1c59afb98ba8ee7b24aca5b6fca1d57bd08c1daef68ba"
+    },
+    {
+      "id": "number-6",
+      "spoken": "Six",
+      "prompt": "Six.",
+      "phonemes": "sˈɪks.",
+      "seconds": 1.35,
+      "sha256": "a10c8e863488709c96725939d2f4b16c2a66d04567414b776a31e72089355ab5"
+    },
+    {
+      "id": "number-7",
+      "spoken": "Seven",
+      "prompt": "Seven.",
+      "phonemes": "sˈɛvən.",
+      "seconds": 1.375,
+      "sha256": "58b61f1d808abdd678092806b3719f5fcf427ddc8fb050bac43442b2599e2776"
+    },
+    {
+      "id": "number-8",
+      "spoken": "Eight",
+      "prompt": "Eight.",
+      "phonemes": "ˈeɪt.",
+      "seconds": 1.275,
+      "sha256": "8c66ed0b603ce0524064faa25bbd4366d1185a2085d1325c59cc3958471ba3f5"
+    },
+    {
+      "id": "number-9",
+      "spoken": "Nine",
+      "prompt": "Nine.",
+      "phonemes": "nˈaɪn.",
+      "seconds": 1.4,
+      "sha256": "e25caa1514487b704b9f18051950f34b5dcb9b964410178921c90e20f66d1a6f"
+    },
+    {
+      "id": "symbol-0021",
+      "spoken": "Exclamation mark",
+      "prompt": "Exclamation mark.",
+      "phonemes": "ɛksklɐmˈeɪʃən mˈɑːɹk.",
+      "seconds": 1.95,
+      "sha256": "fcc110c90d3f4a0fcf2842ce6713c59f2c18e3eb731e85301e12149ef3bbd924"
+    },
+    {
+      "id": "symbol-0022",
+      "spoken": "Double quote",
+      "prompt": "Double quote.",
+      "phonemes": "dˈʌbəl kwˈoʊt.",
+      "seconds": 1.625,
+      "sha256": "b5a3fbeb8daf4ccb19de1dcd2bf91697b4795fa0faac561f356682a27f8a3a60"
+    },
+    {
+      "id": "symbol-0023",
+      "spoken": "Hash",
+      "prompt": "Hash.",
+      "phonemes": "hˈæʃ.",
+      "seconds": 1.375,
+      "sha256": "7b7662a6397a5a870b9c741526131b902808c65b92b03a373bb710e9c034a001"
+    },
+    {
+      "id": "symbol-0024",
+      "spoken": "Dollar sign",
+      "prompt": "Dollar sign.",
+      "phonemes": "dˈɑːlɚ sˈaɪn.",
+      "seconds": 1.575,
+      "sha256": "e37ec7f788359970516c3d073af007e1b2b618254a98ea273ccf4e6c7b3f6c4d"
+    },
+    {
+      "id": "symbol-0025",
+      "spoken": "Percent",
+      "prompt": "Percent.",
+      "phonemes": "pɚsˈɛnt.",
+      "seconds": 1.425,
+      "sha256": "728d26128a5f8cfb0c7128a69d4be55a075abb86b0c54fcba91cf3f6338c1b96"
+    },
+    {
+      "id": "symbol-0026",
+      "spoken": "Ampersand",
+      "prompt": "Ampersand.",
+      "phonemes": "ˈæmpɚsˌænd.",
+      "seconds": 1.675,
+      "sha256": "511a2732ed14d995b4f8096dbebde679e0ec1372bd1339b9a0177e75c56ba4de"
+    },
+    {
+      "id": "symbol-0027",
+      "spoken": "Apostrophe",
+      "prompt": "Apostrophe.",
+      "phonemes": "ɐpˈɔstɹəfi.",
+      "seconds": 1.725,
+      "sha256": "b0b4fbde5bf34166d617f19de34a277192ee0e430dffc917b27e58e74041a2c6"
+    },
+    {
+      "id": "symbol-0028",
+      "spoken": "Left parenthesis",
+      "prompt": "Left parenthesis.",
+      "phonemes": "lˈɛft pɚɹˈɛnθəsˌɪs.",
+      "seconds": 1.85,
+      "sha256": "9480c4453624d7649ae969eb4ae4ec7c84a38097b5c7319d8c5fa5989320ecd1"
+    },
+    {
+      "id": "symbol-0029",
+      "spoken": "Right parenthesis",
+      "prompt": "Right parenthesis.",
+      "phonemes": "ɹˈaɪt pɚɹˈɛnθəsˌɪs.",
+      "seconds": 1.85,
+      "sha256": "998636388399fb62a4397ca96ccb79ef198b2a2e0522d9fddb777d66db16a04c"
+    },
+    {
+      "id": "symbol-002a",
+      "spoken": "Asterisk",
+      "prompt": "Asterisk.",
+      "phonemes": "ˈæstɚɹˌɪsk.",
+      "seconds": 1.55,
+      "sha256": "8c0fcfba82ecdd0214994dde385b63bf362157bb17eefdd8417bad7b371f3dbf"
+    },
+    {
+      "id": "symbol-002b",
+      "spoken": "Plus",
+      "prompt": "Plus.",
+      "phonemes": "plˈʌs.",
+      "seconds": 1.35,
+      "sha256": "a4839f27d050fd259ab08aeb9dc6668c4301a340217218d7973eab2d6ccf58ea"
+    },
+    {
+      "id": "symbol-002c",
+      "spoken": "Comma",
+      "prompt": "Comma.",
+      "phonemes": "kˈɑːmə.",
+      "seconds": 1.325,
+      "sha256": "7b22b441558fafc63eb3eecdbae087ffdd37257463816b57ab7c496d48248b01"
+    },
+    {
+      "id": "symbol-002d",
+      "spoken": "Minus",
+      "prompt": "Minus.",
+      "phonemes": "mˈaɪnəs.",
+      "seconds": 1.475,
+      "sha256": "145d7866fca9e0272fc72c4f2ed52370424902054ef02caad84ce527efa65b47"
+    },
+    {
+      "id": "symbol-002e",
+      "spoken": "Period",
+      "prompt": "Period.",
+      "phonemes": "pˈiəɹɪəd.",
+      "seconds": 1.45,
+      "sha256": "19b21f03d41a4a520bb558cb382a4c21265133715c92e35494572a99f5c8361d"
+    },
+    {
+      "id": "symbol-002f",
+      "spoken": "Slash",
+      "prompt": "Slash.",
+      "phonemes": "slˈæʃ.",
+      "seconds": 1.45,
+      "sha256": "defc21e5c444b6309504f2a5ce17b32bc73231567cff259be50bbfcc615cbb49"
+    },
+    {
+      "id": "symbol-003a",
+      "spoken": "Colon",
+      "prompt": "Colon.",
+      "phonemes": "kˈoʊlən.",
+      "seconds": 1.375,
+      "sha256": "240780fe3f77fe6c0b966c13bbd72ca453ed19da50149fc37a017b032611f5e1"
+    },
+    {
+      "id": "symbol-003b",
+      "spoken": "Semicolon",
+      "prompt": "Semicolon.",
+      "phonemes": "sˌɛmɪkˈoʊlən.",
+      "seconds": 1.575,
+      "sha256": "a3281038ddeffb0ef45ba1571c5e112e23cf620bb3f976c377d46f771e42ab97"
+    },
+    {
+      "id": "symbol-003c",
+      "spoken": "Less than",
+      "prompt": "Less than.",
+      "phonemes": "lˈɛs ðɐn.",
+      "seconds": 1.475,
+      "sha256": "1f3d84a07b9fb83aa4b21cec0ad09d19dc821020b21e99d9d84aefe43f6a0bd6"
+    },
+    {
+      "id": "symbol-003d",
+      "spoken": "Equals",
+      "prompt": "Equals.",
+      "phonemes": "ˈiːkwəlz.",
+      "seconds": 1.425,
+      "sha256": "8cdb20cb97d8f98d2ea45d5ecf2071201cced65ae7fa59053eba63492f7c3761"
+    },
+    {
+      "id": "symbol-003e",
+      "spoken": "Greater than",
+      "prompt": "Greater than.",
+      "phonemes": "ɡɹˈeɪɾɚ ðɐn.",
+      "seconds": 1.575,
+      "sha256": "c0cff5f8a34d85c5e2dc8879575a5b6fac2a58a98e83306e94d97dcfb5f41de3"
+    },
+    {
+      "id": "symbol-003f",
+      "spoken": "Question mark",
+      "prompt": "Question mark.",
+      "phonemes": "kwˈɛstʃən mˈɑːɹk.",
+      "seconds": 1.675,
+      "sha256": "ac5d8eebc0599a6144f3b451c755ab5a497e736567b8e02e5eab88eb137d284a"
+    },
+    {
+      "id": "symbol-0040",
+      "spoken": "At sign",
+      "prompt": "At sign.",
+      "phonemes": "æt sˈaɪn.",
+      "seconds": 1.55,
+      "sha256": "77b4b48c9913a2576957bbec5bf48b9d0fa5bffe64c206a9dc53713a76a48783"
+    },
+    {
+      "id": "symbol-005b",
+      "spoken": "Left bracket",
+      "prompt": "Left bracket.",
+      "phonemes": "lˈɛft bɹˈækɪt.",
+      "seconds": 1.75,
+      "sha256": "e2b282d174d0c9c538ec96413c7add4075194c2ad72ac8d4ad991df0a12cdbf3"
+    },
+    {
+      "id": "symbol-005c",
+      "spoken": "Backslash",
+      "prompt": "Backslash.",
+      "phonemes": "bˈækslæʃ.",
+      "seconds": 1.55,
+      "sha256": "eb40dbfb2e7e1c580c3c834b47c246b4df512129fe5aa17a066e3fa689c2f4e2"
+    },
+    {
+      "id": "symbol-005d",
+      "spoken": "Right bracket",
+      "prompt": "Right bracket.",
+      "phonemes": "ɹˈaɪt bɹˈækɪt.",
+      "seconds": 1.7,
+      "sha256": "478d17c947238c20665dd3c8def39a8ef3c1fb915f3149e59935e2f4d957e0eb"
+    },
+    {
+      "id": "symbol-005e",
+      "spoken": "Caret",
+      "prompt": "Caret.",
+      "phonemes": "kˈæɹət.",
+      "seconds": 1.35,
+      "sha256": "8d560679f230d8437aaaa6f6ade93400bebbee9061efd949f6dfe791a306e570"
+    },
+    {
+      "id": "symbol-005f",
+      "spoken": "Underscore",
+      "prompt": "Underscore.",
+      "phonemes": "ˌʌndɚskˈoːɹ.",
+      "seconds": 1.625,
+      "sha256": "7b1903e4396a5401fb6da074b3c17c4cd7cc26e3cb6beae2f0717aed5073aba9"
+    },
+    {
+      "id": "symbol-0060",
+      "spoken": "Backtick",
+      "prompt": "Backtick.",
+      "phonemes": "bˈæktɪk.",
+      "seconds": 1.45,
+      "sha256": "d8e7cd45ac89860ff591422820612dcd51e2fc3cc8c5bd6b1c4f11c9f79173c4"
+    },
+    {
+      "id": "symbol-007b",
+      "spoken": "Left brace",
+      "prompt": "Left brace.",
+      "phonemes": "lˈɛft bɹˈeɪs.",
+      "seconds": 1.675,
+      "sha256": "23fe6f197c5f5b91a1048358051a49c5f886211bb2e8ed3da3001ab531e53198"
+    },
+    {
+      "id": "symbol-007c",
+      "spoken": "Vertical bar",
+      "prompt": "Vertical bar.",
+      "phonemes": "vˈɜːɾɪkəl bˈɑːɹ.",
+      "seconds": 1.65,
+      "sha256": "90357e7ed10ad8f97aeafb64a22cc998cbf39db0a94eb2090086ccd59c18d47d"
+    },
+    {
+      "id": "symbol-007d",
+      "spoken": "Right brace",
+      "prompt": "Right brace.",
+      "phonemes": "ɹˈaɪt bɹˈeɪs.",
+      "seconds": 1.65,
+      "sha256": "85a28431d851cf0ff940d12160f54d33ff3cbc601624b9d8776de8a7a9e080cf"
+    },
+    {
+      "id": "symbol-007e",
+      "spoken": "Tilde",
+      "prompt": "Tilde.",
+      "phonemes": "tˈɪldə.",
+      "seconds": 1.325,
+      "sha256": "cba2f2ecaa06a08d2caeb59e5f4179d371b30819ac88026e6c750af5a1f299c0"
+    },
+    {
+      "id": "symbol-00a3",
+      "spoken": "Pound sign",
+      "prompt": "Pound sign.",
+      "phonemes": "pˈaʊnd sˈaɪn.",
+      "seconds": 1.55,
+      "sha256": "c48a3abc1f7e6e27d85c71d1b6999251ca0f88009b0cc96c6ce8b7f9ee3e123a"
+    },
+    {
+      "id": "symbol-20ac",
+      "spoken": "Euro sign",
+      "prompt": "Euro sign.",
+      "phonemes": "jˈʊɹɹoʊ sˈaɪn.",
+      "seconds": 1.675,
+      "sha256": "02b8dd6acd6974db16571797d1ac3295b7e22391b1db1dbce1d44e6cd1685937"
+    },
+    {
+      "id": "symbol-00a5",
+      "spoken": "Yen sign",
+      "prompt": "Yen sign.",
+      "phonemes": "jˈɛn sˈaɪn.",
+      "seconds": 1.6,
+      "sha256": "9201edac2893b79d4c823667ba2521f33c9ae15ef2a47bbf9254b0c1fb65afa2"
+    },
+    {
+      "id": "symbol-00a2",
+      "spoken": "Cent sign",
+      "prompt": "Cent sign.",
+      "phonemes": "sˈɛnt sˈaɪn.",
+      "seconds": 1.575,
+      "sha256": "76ad50227e1bab4cb32bb2b2faf4d9672d4b0a071121b89f89cd2dc0d4efa11b"
+    },
+    {
+      "id": "symbol-00b0",
+      "spoken": "Degree sign",
+      "prompt": "Degree sign.",
+      "phonemes": "dᵻɡɹˈiː sˈaɪn.",
+      "seconds": 1.6,
+      "sha256": "278395200546ee537486bf66deff70b50839842dc4068ba727677deb1e205337"
+    },
+    {
+      "id": "symbol-00d7",
+      "spoken": "Multiplication sign",
+      "prompt": "Multiplication sign.",
+      "phonemes": "mˌʌltɪplɪkˈeɪʃən sˈaɪn.",
+      "seconds": 2.05,
+      "sha256": "0c1185e89364ef9c669a5b807770360e3403ce54c95a6aa1f95862d2143da542"
+    },
+    {
+      "id": "symbol-00f7",
+      "spoken": "Division sign",
+      "prompt": "Division sign.",
+      "phonemes": "dᵻvˈɪʒən sˈaɪn.",
+      "seconds": 1.675,
+      "sha256": "c8e5da7309d166d67d5dd259d82fd9340f5108ef081ea0a537584025f93acec9"
+    },
+    {
+      "id": "symbol-00a9",
+      "spoken": "Copyright",
+      "prompt": "Copyright.",
+      "phonemes": "kˈɑːpɪɹˌaɪt.",
+      "seconds": 1.475,
+      "sha256": "6bd9de9276b0e3f2f88bb110fad36daa96063f9a6d21633f7f16aab686a9433e"
+    },
+    {
+      "id": "symbol-00ae",
+      "spoken": "Registered trademark",
+      "prompt": "Registered trademark.",
+      "phonemes": "ɹˈɛdʒɪstɚd tɹˈeɪdmɑːɹk.",
+      "seconds": 1.95,
+      "sha256": "34d20cd17e0147426db1221e22f1e4355e4b7c0a8952c2f7027608c9f4fc2843"
+    },
+    {
+      "id": "symbol-00a7",
+      "spoken": "Section sign",
+      "prompt": "Section sign.",
+      "phonemes": "sˈɛkʃən sˈaɪn.",
+      "seconds": 1.675,
+      "sha256": "8e68ea42f67db3c24ecf03eba06b1a416242b8969d9e14e61de756523b6e8c6e"
+    },
+    {
+      "id": "symbol-00b6",
+      "spoken": "Paragraph sign",
+      "prompt": "Paragraph sign.",
+      "phonemes": "pˈæɹəɡɹˌæf sˈaɪn.",
+      "seconds": 1.75,
+      "sha256": "4e46598141ba92ee11f69ef44841cad0ecf23008f5b4e1c9313f416bf390dca6"
+    },
+    {
+      "id": "symbol-00a1",
+      "spoken": "Inverted exclamation mark",
+      "prompt": "Inverted exclamation mark.",
+      "phonemes": "ɪnvˈɜːɾᵻd ɛksklɐmˈeɪʃən mˈɑːɹk.",
+      "seconds": 2.225,
+      "sha256": "07b1ab22b492ab6131f7de2cfc51a990ceaf1bb7b2cec0ad447c321efcd4d395"
+    },
+    {
+      "id": "symbol-00bf",
+      "spoken": "Inverted question mark",
+      "prompt": "Inverted question mark.",
+      "phonemes": "ɪnvˈɜːɾᵻd kwˈɛstʃən mˈɑːɹk.",
+      "seconds": 2.05,
+      "sha256": "28c8b61deefc76777589aad1d89d025aec8da68430d4e231630101d98d01c6a9"
+    },
+    {
+      "id": "symbol-00ac",
+      "spoken": "Not sign",
+      "prompt": "Not sign.",
+      "phonemes": "nˌɑːt sˈaɪn.",
+      "seconds": 1.575,
+      "sha256": "0c37f8516eac45cd312164c9294b35a7722a1f92515c7ef0e8712b40442b0993"
+    },
+    {
+      "id": "symbol-00b1",
+      "spoken": "Plus or minus",
+      "prompt": "Plus or minus.",
+      "phonemes": "plˈʌs ɔːɹ mˈaɪnəs.",
+      "seconds": 1.75,
+      "sha256": "72fa5b67d8d41b2f8e11904d618a6a0543098b776bbe353e793a6db02aaaa8ad"
+    },
+    {
+      "id": "symbol-00b5",
+      "spoken": "Micro sign",
+      "prompt": "Micro sign.",
+      "phonemes": "mˈaɪkɹoʊ sˈaɪn.",
+      "seconds": 1.775,
+      "sha256": "6037f6dd9bc886c3b0b0169e02992b75cf2e03a6421e5fe3ffa4b3eac432e1aa"
+    },
+    {
+      "id": "symbol-00b7",
+      "spoken": "Middle dot",
+      "prompt": "Middle dot.",
+      "phonemes": "mˈɪdəl dˈɑːt.",
+      "seconds": 1.55,
+      "sha256": "d782b87719275c15c0ea2eb7c54e4e8e6537b2a5dadfb27cfcc837cb39dcaf73"
+    },
+    {
+      "id": "symbol-00ab",
+      "spoken": "Left guillemet",
+      "prompt": "Left guillemet.",
+      "phonemes": "lˈɛft ɡˈɪlɛmɪt.",
+      "seconds": 1.675,
+      "sha256": "c0112e3af0903cef15beb919c6cad3ab4133a423fe3bcb47ad3061a91ddd0696"
+    },
+    {
+      "id": "symbol-00bb",
+      "spoken": "Right guillemet",
+      "prompt": "Right guillemet.",
+      "phonemes": "ɹˈaɪt ɡˈɪlɛmɪt.",
+      "seconds": 1.65,
+      "sha256": "21824bceb96fa6e1988cdd129c68da4e0f076247757a89d24c1b38d92450fd5a"
+    },
+    {
+      "id": "control-backspace",
+      "spoken": "Backspace",
+      "prompt": "Backspace.",
+      "phonemes": "bˈækspeɪs.",
+      "seconds": 1.6,
+      "sha256": "9ed58b307cc0f691a92bbf616b66af488acc212c7f5a2cef4af5068e407e3d99"
+    },
+    {
+      "id": "control-tab",
+      "spoken": "Tab",
+      "prompt": "Tab.",
+      "phonemes": "tˈæb.",
+      "seconds": 1.35,
+      "sha256": "f1beb6d16bceff09895cc0329d966c045da98948969ca20be4051e3ce3893f64"
+    },
+    {
+      "id": "control-clear",
+      "spoken": "Clear",
+      "prompt": "Clear.",
+      "phonemes": "klˈɪɹ.",
+      "seconds": 1.325,
+      "sha256": "a7824d66fc12f80d1202531cdf2f8bd82a988263ffdb3da3affa6e23d2779afd"
+    },
+    {
+      "id": "control-enter",
+      "spoken": "Enter",
+      "prompt": "Enter.",
+      "phonemes": "ˈɛntɚ.",
+      "seconds": 1.45,
+      "sha256": "47169df5b586c5cc262e27da912a91e51c3c563fc3489ef509fe369b072ca0c1"
+    },
+    {
+      "id": "control-shift",
+      "spoken": "Shift",
+      "prompt": "Shift.",
+      "phonemes": "ʃˈɪft.",
+      "seconds": 1.35,
+      "sha256": "2e3a57b7745472f1e7900852f64f6ac8a00799568b45bb250e8a957eceb51c80"
+    },
+    {
+      "id": "control-control",
+      "spoken": "Control",
+      "prompt": "Control.",
+      "phonemes": "kəntɹˈoʊl.",
+      "seconds": 1.525,
+      "sha256": "fadd6169271d8b3771bff441c78f6f618bb9d5b2b83576640524d671b61867ec"
+    },
+    {
+      "id": "control-alt",
+      "spoken": "Alt",
+      "prompt": "ault.",
+      "phonemes": "ˈɔlt.",
+      "seconds": 1.275,
+      "sha256": "ff6f6922ed6686fa2c387a7596ea3e98a12e1f5b7e07ebc06bcb3c4b59941e44"
+    },
+    {
+      "id": "control-pause",
+      "spoken": "Pause",
+      "prompt": "Pause.",
+      "phonemes": "pˈɔːz.",
+      "seconds": 1.4,
+      "sha256": "f36015d1ef4837281fa92212385e3ac3d5f801a80a95076d1aafb187c34fffc3"
+    },
+    {
+      "id": "control-caps-lock",
+      "spoken": "Caps Lock",
+      "prompt": "Caps Lock.",
+      "phonemes": "kˈæps lˈɑːk.",
+      "seconds": 1.55,
+      "sha256": "e4f025d08809ae557f612092e587bd2c03fff60367748105fcca3effeec10d30"
+    },
+    {
+      "id": "control-escape",
+      "spoken": "Escape",
+      "prompt": "Escape.",
+      "phonemes": "ɛskˈeɪp.",
+      "seconds": 1.45,
+      "sha256": "0732f7dec5d7ad53784c420aa8728fcf15c582d307a9c85bcdfe7c35c133128f"
+    },
+    {
+      "id": "control-space",
+      "spoken": "Space",
+      "prompt": "Space.",
+      "phonemes": "spˈeɪs.",
+      "seconds": 1.45,
+      "sha256": "3bdac495187c8f026da5ba8f12ea7b54592bcb4418cbefec520dae7333346200"
+    },
+    {
+      "id": "control-page-up",
+      "spoken": "Page Up",
+      "prompt": "Page Up.",
+      "phonemes": "pˈeɪdʒ ˈʌp.",
+      "seconds": 1.45,
+      "sha256": "6745fc7b2e3096a34b3c3c4242d2bded5e0c54338bc80b0633e3d0e994c9fcde"
+    },
+    {
+      "id": "control-page-down",
+      "spoken": "Page Down",
+      "prompt": "Page Down.",
+      "phonemes": "pˈeɪdʒ dˈaʊn.",
+      "seconds": 1.6,
+      "sha256": "981e47b246f593379b75dc7f531857061d285c6f670599cd332f814a930751e7"
+    },
+    {
+      "id": "control-end",
+      "spoken": "End",
+      "prompt": "End.",
+      "phonemes": "ˈɛnd.",
+      "seconds": 1.325,
+      "sha256": "feea413bf7f03418c01c16bcd92c8e5674f63568cdee2812e8e5d8ece6e60a0b"
+    },
+    {
+      "id": "control-home",
+      "spoken": "Home",
+      "prompt": "Home.",
+      "phonemes": "hˈoʊm.",
+      "seconds": 1.375,
+      "sha256": "e5b823f8082381aec070089a2b5b31a57824c502de2367e235dc32ffbfbef7b9"
+    },
+    {
+      "id": "control-left-arrow",
+      "spoken": "Left arrow",
+      "prompt": "Left arrow.",
+      "phonemes": "lˈɛft ˈæɹoʊ.",
+      "seconds": 1.6,
+      "sha256": "923c2cd3312dfa458c7e9c0c32699c0ef2cb97c1260f444621a4f227083b1316"
+    },
+    {
+      "id": "control-up-arrow",
+      "spoken": "Up arrow",
+      "prompt": "Up arrow.",
+      "phonemes": "ˌʌp ˈæɹoʊ.",
+      "seconds": 1.475,
+      "sha256": "d7f777a8b3e4a7028079429ad8aebbfae3fcb595c2b6fed13ffee97e3fafd8df"
+    },
+    {
+      "id": "control-right-arrow",
+      "spoken": "Right arrow",
+      "prompt": "Right arrow.",
+      "phonemes": "ɹˈaɪt ˈæɹoʊ.",
+      "seconds": 1.525,
+      "sha256": "9b080567096735b31faad9fc08ac311553945c9c34071ef237f8c22a9fab7133"
+    },
+    {
+      "id": "control-down-arrow",
+      "spoken": "Down arrow",
+      "prompt": "Down arrow.",
+      "phonemes": "dˌaʊn ˈæɹoʊ.",
+      "seconds": 1.6,
+      "sha256": "ac94a9551c797b8c9271f364ab498bfe35e6cb24ca9606c1700eeb03b25f6dbb"
+    },
+    {
+      "id": "control-print-screen",
+      "spoken": "Print screen",
+      "prompt": "Print screen.",
+      "phonemes": "pɹˈɪnt skɹˈiːn.",
+      "seconds": 1.575,
+      "sha256": "92f64869c236de80d883662446c6a59cb9fa99f641023789c9d1c5cc74cb8bef"
+    },
+    {
+      "id": "control-insert",
+      "spoken": "Insert",
+      "prompt": "Insert.",
+      "phonemes": "ˈɪnsɜːt.",
+      "seconds": 1.475,
+      "sha256": "6963f114c40e246fbc3a640313539509b9b95dbb604a12a5e0d53c62444cc461"
+    },
+    {
+      "id": "control-delete",
+      "spoken": "Delete",
+      "prompt": "Delete.",
+      "phonemes": "dᵻlˈiːt.",
+      "seconds": 1.35,
+      "sha256": "fc12917f8b26b53e8124c7f9e6233232d30fcda6b93a43a66dbe9f75ffe1e08d"
+    },
+    {
+      "id": "control-super",
+      "spoken": "Super",
+      "prompt": "Super.",
+      "phonemes": "sˈuːpɚ.",
+      "seconds": 1.4,
+      "sha256": "34efd807e5cb4485c1f8203451fc8582b61e2fc89d7a9fed58945154299bcd7e"
+    },
+    {
+      "id": "control-menu",
+      "spoken": "Menu",
+      "prompt": "Menu.",
+      "phonemes": "mˈɛnjuː.",
+      "seconds": 1.425,
+      "sha256": "30a1f8a2538c68d00658a6493b227f1fffeae9f95c5d42784b6cd2a4e076243b"
+    },
+    {
+      "id": "control-f-one",
+      "spoken": "F one",
+      "prompt": "F one.",
+      "phonemes": "ˈɛf wˌʌn.",
+      "seconds": 1.5,
+      "sha256": "306d37e8cba18eb28e24ae0dff40a1d9c12832daa6b09abd1842be6c729a7acd"
+    },
+    {
+      "id": "control-f-two",
+      "spoken": "F two",
+      "prompt": "F two.",
+      "phonemes": "ˈɛf tˈuː.",
+      "seconds": 1.475,
+      "sha256": "e08997f92a8baeb105741a16c4719a850fd7cd5c59720dcb8def8982c9bca576"
+    },
+    {
+      "id": "control-f-three",
+      "spoken": "F three",
+      "prompt": "F three.",
+      "phonemes": "ˈɛf θɹˈiː.",
+      "seconds": 1.525,
+      "sha256": "7b37918fadd6c78c12bc0b20549eb4ce6c647d843b90d920a176db5bafdb6bd8"
+    },
+    {
+      "id": "control-f-four",
+      "spoken": "F four",
+      "prompt": "F four.",
+      "phonemes": "ˈɛf fˈoːɹ.",
+      "seconds": 1.5,
+      "sha256": "9265a41d2f3a2aa98fc42e71f74331ef63116ec72d927b3ee3b5e3fd3cf02ec8"
+    },
+    {
+      "id": "control-f-five",
+      "spoken": "F five",
+      "prompt": "F five.",
+      "phonemes": "ˈɛf fˈaɪv.",
+      "seconds": 1.525,
+      "sha256": "b5003c3afc062a2abcfd866412272cb118f79370af7c4ada317dd821e98c9aa5"
+    },
+    {
+      "id": "control-f-six",
+      "spoken": "F six",
+      "prompt": "F six.",
+      "phonemes": "ˈɛf sˈɪks.",
+      "seconds": 1.5,
+      "sha256": "b3b369d8e0098b905721913621ffaa8bd23343a44cbf45ea88be5868b09371a7"
+    },
+    {
+      "id": "control-f-seven",
+      "spoken": "F seven",
+      "prompt": "F seven.",
+      "phonemes": "ˈɛf sˈɛvən.",
+      "seconds": 1.55,
+      "sha256": "c7f58e4ee642d97cc8dc4c45b7b838ea302971d1760f07be37fc64cb617c10fe"
+    },
+    {
+      "id": "control-f-eight",
+      "spoken": "F eight",
+      "prompt": "F eight.",
+      "phonemes": "ˈɛf ˈeɪt.",
+      "seconds": 1.5,
+      "sha256": "f092eb06281647dca8db9f0574229c414821041bd20f9345c4007099ca0fd693"
+    },
+    {
+      "id": "control-f-nine",
+      "spoken": "F nine",
+      "prompt": "F nine.",
+      "phonemes": "ˈɛf nˈaɪn.",
+      "seconds": 1.5,
+      "sha256": "ad2b665d88cea4f4e0112cebf37e5c51f91d401ef484c95b197e2ce1b0802f29"
+    },
+    {
+      "id": "control-f-ten",
+      "spoken": "F ten",
+      "prompt": "F ten.",
+      "phonemes": "ˈɛf tˈɛn.",
+      "seconds": 1.475,
+      "sha256": "10ed365c8ef56ac44eb6aaa21f9c65c529dea20c6befadc7b161922d891b61c1"
+    },
+    {
+      "id": "control-f-eleven",
+      "spoken": "F eleven",
+      "prompt": "F eleven.",
+      "phonemes": "ˈɛf ᵻlˈɛvən.",
+      "seconds": 1.575,
+      "sha256": "0d153787425cec563bd3c3f5faad2ecf0f8968ff8d7b0a0e3368500e6d749036"
+    },
+    {
+      "id": "control-f-twelve",
+      "spoken": "F twelve",
+      "prompt": "F twelve.",
+      "phonemes": "ˈɛf twˈɛlv.",
+      "seconds": 1.525,
+      "sha256": "0db1732e1ef51179658400f554d845ee17039ba3ea38fa7eff9f3a66d44366a5"
+    },
+    {
+      "id": "control-f-thirteen",
+      "spoken": "F thirteen",
+      "prompt": "F thirteen.",
+      "phonemes": "ˈɛf θˈɜːtiːn.",
+      "seconds": 1.675,
+      "sha256": "eaff7c79edccdd87788d871b06f694d7bf165df7627ed6417d802a0f94293901"
+    },
+    {
+      "id": "control-f-fourteen",
+      "spoken": "F fourteen",
+      "prompt": "F fourteen.",
+      "phonemes": "ˈɛf fˈoːɹtiːn.",
+      "seconds": 1.6,
+      "sha256": "9d242382c5d8869bd4841d2221e52468b9994cd8bbc5cd12534a15bcc6f9a8de"
+    },
+    {
+      "id": "control-f-fifteen",
+      "spoken": "F fifteen",
+      "prompt": "F fifteen.",
+      "phonemes": "ˈɛf fˈɪftiːn.",
+      "seconds": 1.6,
+      "sha256": "7273137d81864c2a1253f054d648746661f3029917732f13c25af4678d12ce32"
+    },
+    {
+      "id": "control-f-sixteen",
+      "spoken": "F sixteen",
+      "prompt": "F sixteen.",
+      "phonemes": "ˈɛf sˈɪkstiːn.",
+      "seconds": 1.675,
+      "sha256": "6cdc0583c9eeb17643edd9ec9a4356e5dd819efc90c4989ae77b8b9d01615558"
+    },
+    {
+      "id": "control-f-seventeen",
+      "spoken": "F seventeen",
+      "prompt": "F seventeen.",
+      "phonemes": "ˈɛf sˈɛvəntˌiːn.",
+      "seconds": 1.75,
+      "sha256": "939356a7c03d229582ede6fd012d7f2658e135f8dd381700247945527098223c"
+    },
+    {
+      "id": "control-f-eighteen",
+      "spoken": "F eighteen",
+      "prompt": "F eighteen.",
+      "phonemes": "ˈɛf ˈeɪtiːn.",
+      "seconds": 1.625,
+      "sha256": "256951176c2a6ba66e5b4a149290889c668de84cbd236cfbb4d94510331fb6a6"
+    },
+    {
+      "id": "control-f-nineteen",
+      "spoken": "F nineteen",
+      "prompt": "F nineteen.",
+      "phonemes": "ˈɛf nˈaɪntiːn.",
+      "seconds": 1.675,
+      "sha256": "1365d72ab4930edbdfc657775daa441b64db8018ef87313e3ae34e17d66e3ae4"
+    },
+    {
+      "id": "control-f-twenty",
+      "spoken": "F twenty",
+      "prompt": "F twenty.",
+      "phonemes": "ˈɛf twˈɛnti.",
+      "seconds": 1.55,
+      "sha256": "9917363e762003d31e776a181eb8b427c90e8e4779f56eacd1e202b4ea0b54fa"
+    },
+    {
+      "id": "control-f-twenty-one",
+      "spoken": "F twenty-one",
+      "prompt": "F twenty-one.",
+      "phonemes": "ˈɛf twˈɛntiwˌʌn.",
+      "seconds": 1.625,
+      "sha256": "89ef682f54b98e236ee08fd49290fe03b968b7958d52a7c1ca029b2511e17791"
+    },
+    {
+      "id": "control-f-twenty-two",
+      "spoken": "F twenty-two",
+      "prompt": "F twenty-two.",
+      "phonemes": "ˈɛf twˈɛntitˈuː.",
+      "seconds": 1.725,
+      "sha256": "07ead87868a3609ecce7544679e618e2146d9ffa1ea826f9663da6e8d641861c"
+    },
+    {
+      "id": "control-f-twenty-three",
+      "spoken": "F twenty-three",
+      "prompt": "F twenty-three.",
+      "phonemes": "ˈɛf twˈɛntiθɹˈiː.",
+      "seconds": 1.7,
+      "sha256": "585aba2c5d978592d9b86aadbd8444f3f5cbfa92942f13873d369c86bc684ff6"
+    },
+    {
+      "id": "control-f-twenty-four",
+      "spoken": "F twenty-four",
+      "prompt": "F twenty-four.",
+      "phonemes": "ˈɛf twˈɛntifˈoːɹ.",
+      "seconds": 1.675,
+      "sha256": "8ac49e2d0b950a56d972082e3ca414c03851a285ef63573212d4ed43c77cb803"
+    },
+    {
+      "id": "control-num-lock",
+      "spoken": "Num Lock",
+      "prompt": "Num Lock.",
+      "phonemes": "nˈʌm lˈɑːk.",
+      "seconds": 1.525,
+      "sha256": "00f054f470bf11d069ba9e435866985a6e9ef36a1ab0f0dc51a2e663cd6b808a"
+    },
+    {
+      "id": "control-scroll-lock",
+      "spoken": "Scroll Lock",
+      "prompt": "Scroll Lock.",
+      "phonemes": "skɹˈoʊl lˈɑːk.",
+      "seconds": 1.6,
+      "sha256": "848a7aaa706251cd5cc7ee7bc39b47dc076226af8d0e0642de3b08fc1b77e34f"
+    },
+    {
+      "id": "control-mute",
+      "spoken": "Mute",
+      "prompt": "Mute.",
+      "phonemes": "mjˈuːt.",
+      "seconds": 1.35,
+      "sha256": "a3ea14cf140ae7b9ead03ae22e51a1108d0a1b76c4a3a072399af220da8f0509"
+    },
+    {
+      "id": "control-volume-down",
+      "spoken": "Volume down",
+      "prompt": "Volume down.",
+      "phonemes": "vˈɑːljuːm dˈaʊn.",
+      "seconds": 1.725,
+      "sha256": "103a784612ade54008f2f19c278978c57450702e3261b0189d90f7177461794d"
+    },
+    {
+      "id": "control-volume-up",
+      "spoken": "Volume up",
+      "prompt": "Volume up.",
+      "phonemes": "vˈɑːljuːm ˈʌp.",
+      "seconds": 1.525,
+      "sha256": "0c7a9e273adf7fd2e908b7b0f5908e2a05f931341d5f5601374b968740601206"
+    },
+    {
+      "id": "control-next-track",
+      "spoken": "Next track",
+      "prompt": "Next track.",
+      "phonemes": "nˈɛkst tɹˈæk.",
+      "seconds": 1.575,
+      "sha256": "5365185b42c624c65c6857a8a69276d102aa73befc1762196f0bde933a5a5251"
+    },
+    {
+      "id": "control-previous-track",
+      "spoken": "Previous track",
+      "prompt": "Previous track.",
+      "phonemes": "pɹˈiːviəs tɹˈæk.",
+      "seconds": 1.675,
+      "sha256": "0edc309faf2007627f32579284a5b40d57eb3b4fef4589e23123952ffa04a419"
+    },
+    {
+      "id": "control-stop",
+      "spoken": "Stop",
+      "prompt": "Stop.",
+      "phonemes": "stˈɑːp.",
+      "seconds": 1.375,
+      "sha256": "201219c19d98d725260be632e33466ddce1b1bc68f4ea2d860d6d6094a7cbd54"
+    },
+    {
+      "id": "control-play-pause",
+      "spoken": "Play pause",
+      "prompt": "Play pause.",
+      "phonemes": "plˈeɪ pˈɔːz.",
+      "seconds": 1.55,
+      "sha256": "5f6d6f7bb227d594105243b066946268146a12e0ea081019060268c13fd98b4b"
+    },
+    {
+      "id": "unknown-character",
+      "spoken": "Unknown character",
+      "prompt": "Unknown character.",
+      "phonemes": "ʌnnˈoʊn kˈæɹɪktɚ.",
+      "seconds": 1.925,
+      "sha256": "097673649cfb27d5328c9519bbb02aa2fd8137505e7c2f9746e1cd6d0e7e8a18"
+    }
+  ]
+}
