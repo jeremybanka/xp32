@@ -8,8 +8,8 @@
 - Bun regression tests reject newer Windows subsystem requirements, unreviewed
   imports, missing resources, and malformed icon mask data. The ZIP test verifies
   its executable and documentation match the current build and sources.
-- GitHub Actions is configured to run the same checks on Ubuntu and upload the
-  portable ZIP. The workflow has been linted locally; a hosted run is not yet verified.
+- GitHub Actions passed the same checks on Ubuntu and uploaded the portable ZIP
+  for commit `4161ed8` ([run](https://github.com/jeremybanka/xp32/actions/runs/35838905159)).
 - GUI validation below describes the app revision; the separate font update is described below.
 
 ## Keytest packaging revision
@@ -58,8 +58,10 @@ the user's modified NonameSans-Web.otf export, which adds an ampersand.
   ampersand correctly. The family remains Noname Sans Web.
 - Updated executable passes the XP audit: 46,080 bytes and 47 reviewed imports.
   All two Zig tests and six Bun tests pass.
-- Updated ISO mounted in UTM, but guest clicks and keys were not taking effect,
-  so live XP rendering of this OTF remains unverified. Input capture was released.
+- Live XP verification passed on September 23, 2026 using the updated ISO in UTM:
+  Keytest launched fullscreen at 1024 × 768, rendered Enter in white on green,
+  then Shift+7 rendered the custom ampersand in white on orange. The OTF loaded
+  successfully without a font substitution error. Input capture remains off.
 
 ## Regression checklist
 
