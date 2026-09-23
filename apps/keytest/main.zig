@@ -1,6 +1,6 @@
 const std = @import("std");
-const w = @import("src/win32.zig");
-const keys = @import("src/keys.zig");
+const w = @import("win32");
+const keys = @import("keys.zig");
 const wide = std.unicode.utf8ToUtf16LeStringLiteral;
 const wm_fit_fullscreen = 0x8000; // WM_APP: run after Windows finishes restoring.
 const font_data = @embedFile("assets/noname-sans.ttf");
@@ -60,7 +60,7 @@ fn cleanup() void {
 
 fn fail(message: [*:0]const u16) noreturn {
     cleanup();
-    _ = w.MessageBoxW(null, message, wide("Glyph"), 0x10);
+    _ = w.MessageBoxW(null, message, wide("Keytest"), 0x10);
     w.ExitProcess(1);
 }
 
@@ -226,9 +226,11 @@ pub export fn WinMainCRTStartup() callconv(.winapi) noreturn {
     resizeFont(w.GetSystemMetrics(1));
 
     const instance = w.GetModuleHandleW(null);
-    const class = w.WNDCLASSW{ .lpfnWndProc = windowProc, .hInstance = instance, .lpszClassName = wide("XP32Glyph") };
+    const icon = w.LoadIconW(instance, @ptrFromInt(100));
+    if (icon == null) fail(wide("Could not load the Keytest icon."));
+    const class = w.WNDCLASSW{ .lpfnWndProc = windowProc, .hInstance = instance, .hIcon = icon, .lpszClassName = wide("XP32Keytest") };
     if (w.RegisterClassW(&class) == 0) fail(wide("Could not register the fullscreen window."));
-    window = w.CreateWindowExW(0, class.lpszClassName, wide("Glyph"), 0x80000000, 0, 0, w.GetSystemMetrics(0), w.GetSystemMetrics(1), null, null, instance, null);
+    window = w.CreateWindowExW(0, class.lpszClassName, wide("Keytest"), 0x80000000, 0, 0, w.GetSystemMetrics(0), w.GetSystemMetrics(1), null, null, instance, null);
     if (window == null) fail(wide("Could not create the fullscreen window."));
 
     const dc = w.GetDC(window);

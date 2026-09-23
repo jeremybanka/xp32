@@ -1,6 +1,21 @@
 # Verification status
 
-## Current responsive build
+## Keytest packaging revision
+
+- Renamed the executable, window class, window/error titles and version metadata
+  to Keytest. Moved app code and assets to apps/keytest, with Win32 in shared.
+- XP PE/import audit passes: 57,344 bytes, 47 XP-compatible imports.
+- Linked icon resource audit passes: 16/24/32/48 px uncompressed 32-bit DIBs,
+  matching group entries, full mask data and application version metadata.
+- Computer/UTM live verification passed: Explorer displays the keycap icon,
+  keytest.exe filename and Keytest description. The taskbar displays Keytest
+  with its icon, and the task switcher uses the same icon.
+- Renamed executable launched fullscreen and rendered k on blue. Alt-Tab left
+  the desktop usable. The new media is mounted as KEYTEST (D:) from
+  /private/tmp/keytest.iso. Input capture is off.
+- Input tests, Zig formatting, and whitespace checks pass after relocation.
+
+## Responsive prototype validation (before rename)
 
 - Cross-compiled with official Zig 0.15.2 for `x86-windows.xp-gnu`, Pentium III.
 - PE audit passes: PE32 GUI, Windows/subsystem 5.1, 37,888 bytes; 46 reviewed
