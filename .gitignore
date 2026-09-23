@@ -1,0 +1,6 @@
+.tools/
+.zig-cache/
+zig-out/
+dist/
+artifacts/
+

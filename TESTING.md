@@ -1,0 +1,49 @@
+# Verification status
+
+## Current responsive build
+
+- Cross-compiled with official Zig 0.15.2 for `x86-windows.xp-gnu`, Pentium III.
+- PE audit passes: PE32 GUI, Windows/subsystem 5.1, 37,888 bytes; 46 reviewed
+  imports from kernel32, user32 and gdi32 only.
+- No display-mode-changing API is allowed by the import audit.
+- Fullscreen placement uses the current primary display dimensions.
+- Font size is one quarter of client height; long labels shrink to fit 90% width.
+- Activation queues placement until after the Windows restore operation and
+  retains default keyboard-focus handling. Canvas allocation follows client size.
+- Computer/UTM validation: the revised GLYPH3 build launched at 1024 × 768,
+  filled the entire guest display, and rendered the responsive font.
+- Verified b/blue, a/cyan, 7/red and Backspace/green. Backspace fits the screen.
+- Verified two defocus/restore cycles with working keyboard input and complete
+  fullscreen coverage after returning. No resolution switch on Alt-Tab.
+- Exercised external 800 × 600 display changes while minimized; XP reverted
+  both changes before the confirmation was accepted. Restoration at 1024 × 768
+  passed, but rendering/font size at a second resolution is not yet verified.
+- Input classification tests and Zig formatting check pass.
+- The new build is mounted as GLYPH3 (D:) from /private/tmp/xp32-glyph3.iso.
+  XP is left at its original 1024 × 768, High (24 bit), with capture released.
+
+## Known font limitation
+
+Shift+7 correctly produces an orange background, but the embedded Noname Sans
+renders its own NO GLYPH placeholder for ampersand. No fallback font has been
+added. This was observed in live testing; ampersand rendering is not a pass.
+
+## Regression checklist
+
+1. Launch at 1024 × 768: borderless full coverage, no desktop/taskbar visible,
+   192 px nominal font size. Repeat at 1280 × 1024 for 256 px type.
+2. Press B, A, 7, Shift+1 and Shift+7. Expect white b/a/7/!/& on
+   blue/cyan/red/orange/orange, with literal ampersand rendering.
+3. Check Shift, Ctrl, Alt, Enter, Esc, Space, arrows and Backspace labels on green.
+4. Alt-Tab out and return repeatedly, including quick switches. Confirm full
+   coverage, centered text and working input after every return.
+5. Change the XP resolution while the app is minimized, then return. Confirm
+   window, canvas and font adopt the new dimensions.
+6. Quit with Alt+F4. Confirm XP's resolution and color depth stay unchanged.
+
+## Earlier build
+
+The user verified rendering in XP but reported a 1024 × 768 window remaining
+inside a 1280 × 1024 desktop after defocus/refocus. The current revision removes
+exclusive display-mode switching entirely, per the user's revised request.
+UTM temporarily has Return and G Send Key shortcuts from the initial test session.
