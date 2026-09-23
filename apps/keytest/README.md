@@ -14,8 +14,8 @@ the last key stays on screen in white **Noname Sans at ¼ of the screen height**
 
 The font is embedded in the EXE, registered privately, and removed on exit.
 No font installation, SDL, .NET, C runtime, or additional DLLs are needed.
-The initial screen is blank green until a key is pressed. The supplied font
-has incomplete symbol coverage (for example, `&` renders its NO GLYPH placeholder).
+The initial screen is blank green until a key is pressed. The embedded font
+includes the user's custom ampersand glyph.
 
 ## Run
 
@@ -39,48 +39,34 @@ The app reports an error if it cannot use the embedded font.
 
 ## Build
 
-Install [Zig 0.15.2](https://ziglang.org/download/0.15.2/) on the development host
-(XP only runs the compiled output). Python 3.8+ is used for the PE audit.
+From the repository root, install the pinned tools and script dependencies:
 
 ```sh
-ZIG=/path/to/zig sh scripts/build.sh keytest
+mise trust
+mise install
+mise exec -- just setup
+mise exec -- just build keytest
+mise exec -- just check
 ```
 
-On this workspace, `sh scripts/build.sh keytest` finds the downloaded compiler in
-`.tools/zig-aarch64-macos-0.15.2/zig`. The build uses a Pentium III CPU baseline,
-Windows XP 5.1 PE headers, and an explicit startup function. The audit rejects
-DLLs or imported APIs outside the reviewed XP-compatible list and checks the
-embedded icon frames and version resource. Builds also create
-`dist/keytest-xp32.zip` with the executable and documentation.
+See the repository README for mise setup and the macOS 27 SDK workaround
+(`just bootstrap-resinator`). The tools run on the development host; XP only
+runs the compiled output.
 
-The direct `build-exe` script avoids compiling Zig's native build runner, which
-has a linking problem with this host's macOS 27 SDK. Its bundled resource compiler
-needs the same workaround on this host. Run `sh scripts/bootstrap-resinator-macos.sh`
-once to compile it against the installed macOS 12.1 SDK; normal builds then use
-`.tools/resinator`. Other hosts use `zig rc` directly. These tools only run on the
-development host; the XP executable has no dependency on its SDK.
+The build uses a Pentium III CPU baseline, Windows XP 5.1 PE headers, and an
+explicit startup function. Its audit rejects DLLs or imported APIs outside the
+reviewed XP-compatible list and checks embedded icon frames and version metadata.
+Builds also create `dist/keytest-xp32.zip` with the executable and documentation.
+`just check` verifies formatting, builds the executable, and runs the Zig input
+classification tests plus Bun executable-audit and packaging tests.
 
-Run input classification tests on a typical host with:
+To build a CD image for transfer into UTM on macOS:
 
 ```sh
-zig test apps/keytest/keys.zig
+mise exec -- just iso keytest
 ```
 
-On this Apple Silicon host, the verified test command is:
-
-```sh
-.tools/zig-aarch64-macos-0.15.2/zig test apps/keytest/keys.zig \
-  -target aarch64-macos.12.1 \
-  --sysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk \
-  --cache-dir .zig-cache --global-cache-dir .tools/cache
-```
-
-To make a CD image for transfer into UTM on macOS:
-
-```sh
-hdiutil makehybrid -iso -joliet -default-volume-name KEYTEST \
-  -o /tmp/keytest.iso dist/keytest
-```
+Mount the resulting `dist/keytest.iso` in UTM's virtual CD drive.
 
 ## Implementation
 
@@ -89,8 +75,9 @@ hdiutil makehybrid -iso -joliet -default-volume-name KEYTEST \
 classification separate from the platform layer. The event-driven message loop
 does not continuously repaint an unchanged screen.
 
-The font was copied from the user's installed `nonamesans-web-webfont.ttf`.
-Its internal family name is **Noname Sans Web**, with a Regular face. The app
+The font is the user's modified `NonameSans-Web.otf`, exported on September 23,
+2026 with an added ampersand. Its internal family name is **Noname Sans Web**,
+with a Regular face. The app
 requests weight 600, matching the user's WezTerm window-frame configuration.
 
 The icon is embedded in the executable and used by Explorer and the application

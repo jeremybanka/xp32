@@ -3,7 +3,7 @@ const w = @import("win32");
 const keys = @import("keys.zig");
 const wide = std.unicode.utf8ToUtf16LeStringLiteral;
 const wm_fit_fullscreen = 0x8000; // WM_APP: run after Windows finishes restoring.
-const font_data = @embedFile("assets/noname-sans.ttf");
+const font_data = @embedFile("assets/noname-sans.otf");
 const font_name = wide("Noname Sans Web");
 
 var window: w.HWND = null;

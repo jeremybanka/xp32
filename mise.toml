@@ -1,0 +1,5 @@
+[tools]
+zig = "0.15.2"
+just = "1.58.0"
+"github:nushell/nushell" = "0.115.1"
+bun = "1.4.2"

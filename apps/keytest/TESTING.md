@@ -1,5 +1,17 @@
 # Verification status
 
+## Repository tooling
+
+- `mise.toml` pins Zig, just, Nushell, and Bun; `bun.lock` locks script dependencies.
+- `just check` builds and audits the XP executable, checks Zig/justfile formatting,
+  and passes two Zig input tests plus six Bun build-audit and packaging tests.
+- Bun regression tests reject newer Windows subsystem requirements, unreviewed
+  imports, missing resources, and malformed icon mask data. The ZIP test verifies
+  its executable and documentation match the current build and sources.
+- GitHub Actions is configured to run the same checks on Ubuntu and upload the
+  portable ZIP. The workflow has been linted locally; a hosted run is not yet verified.
+- GUI validation below describes the app revision; the separate font update is described below.
+
 ## Keytest packaging revision
 
 - Renamed the executable, window class, window/error titles and version metadata
@@ -37,11 +49,17 @@
 - The new build is mounted as GLYPH3 (D:) from /private/tmp/xp32-glyph3.iso.
   XP is left at its original 1024 × 768, High (24 bit), with capture released.
 
-## Known font limitation
+## Updated font
 
-Shift+7 correctly produces an orange background, but the embedded Noname Sans
-renders its own NO GLYPH placeholder for ampersand. No fallback font has been
-added. This was observed in live testing; ampersand rendering is not a pass.
+The original font rendered NO GLYPH for ampersand. The embedded asset now uses
+the user's modified NonameSans-Web.otf export, which adds an ampersand.
+
+- Windows Unicode cmap maps U+0026 to glyph 149; a FreeType preview renders the
+  ampersand correctly. The family remains Noname Sans Web.
+- Updated executable passes the XP audit: 46,080 bytes and 47 reviewed imports.
+  All two Zig tests and six Bun tests pass.
+- Updated ISO mounted in UTM, but guest clicks and keys were not taking effect,
+  so live XP rendering of this OTF remains unverified. Input capture was released.
 
 ## Regression checklist
 

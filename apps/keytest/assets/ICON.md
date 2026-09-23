@@ -3,12 +3,12 @@
 Created with the built-in imagegen tool. `keytest.png` is the original transparent
 artwork; `keytest.ico` contains uncompressed 32-bit DIB frames at 16, 24, 32 and
 48 pixels, with alpha and explicit AND masks for Windows XP. Normal builds use
-the checked-in ICO and do not require an image-generation tool or Pillow.
+the checked-in ICO and do not require an image-generation tool.
 
-Regenerate the ICO from the PNG using Python with Pillow installed:
+After `just setup`, regenerate the ICO from the PNG using Bun and sharp:
 
 ```sh
-python3 apps/keytest/scripts/export_icon.py
+mise exec -- just icon
 ```
 
 Generation prompt:
