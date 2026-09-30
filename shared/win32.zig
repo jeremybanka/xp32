@@ -36,6 +36,8 @@ pub const HOOKPROC = *const fn (i32, WPARAM, LPARAM) callconv(.winapi) LRESULT;
 
 pub extern "kernel32" fn GetModuleHandleW(?[*:0]const u16) callconv(.winapi) HANDLE;
 pub extern "kernel32" fn ExitProcess(u32) callconv(.winapi) noreturn;
+// With SND_MEMORY the first argument points to a persistent RIFF/WAV buffer.
+pub extern "winmm" fn PlaySoundA(?[*]const u8, HANDLE, u32) callconv(.winapi) BOOL;
 pub extern "user32" fn LoadIconW(HANDLE, [*:0]const u16) callconv(.winapi) HANDLE;
 pub extern "user32" fn RegisterClassW(*const WNDCLASSW) callconv(.winapi) u16;
 pub extern "user32" fn CreateWindowExW(u32, [*:0]const u16, [*:0]const u16, u32, i32, i32, i32, i32, HWND, HANDLE, HANDLE, ?*anyopaque) callconv(.winapi) HWND;

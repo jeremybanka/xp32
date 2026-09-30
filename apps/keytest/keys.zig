@@ -61,7 +61,7 @@ pub fn controlLabel(vk: usize) ?[]const u8 {
         0x2C => "Print Scr",
         0x2D => "Insert",
         0x2E => "Delete",
-        0x5B, 0x5C => "Win",
+        0x5B, 0x5C => "Super",
         0x5D => "Menu",
         0x70 => "F1",
         0x71 => "F2",

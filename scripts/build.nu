@@ -18,7 +18,7 @@ def main [app: string = 'keytest'] {
         -O ReleaseSmall -fno-stack-protector -fsingle-threaded -fstrip
         --dep win32 $'-Mroot=($source)/main.zig' $'-Mwin32=($root)/shared/win32.zig'
         -fentry=WinMainCRTStartup --subsystem windows
-        -lkernel32 -luser32 -lgdi32 $'-femit-bin=($executable)')
+        -lkernel32 -luser32 -lgdi32 -lwinmm $'-femit-bin=($executable)')
     checked bun scripts/check-pe.bun.ts $executable --require-icon
     checked bun scripts/package.bun.ts $app
 }

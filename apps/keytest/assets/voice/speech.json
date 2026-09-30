@@ -1,0 +1,872 @@
+[
+  {
+    "id": "letter-a",
+    "spoken": "Alfa",
+    "characters": "aA",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-b",
+    "spoken": "Bravo",
+    "characters": "bB",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-c",
+    "spoken": "Charlie",
+    "characters": "cC",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-d",
+    "spoken": "Delta",
+    "characters": "dD",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-e",
+    "spoken": "Echo",
+    "characters": "eE",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-f",
+    "spoken": "Foxtrot",
+    "characters": "fF",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-g",
+    "spoken": "Golf",
+    "characters": "gG",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-h",
+    "spoken": "Hotel",
+    "characters": "hH",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-i",
+    "spoken": "India",
+    "characters": "iI",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-j",
+    "spoken": "Juliett",
+    "characters": "jJ",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-k",
+    "spoken": "Kilo",
+    "characters": "kK",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-l",
+    "spoken": "Lima",
+    "characters": "lL",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-m",
+    "spoken": "Mike",
+    "characters": "mM",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-n",
+    "spoken": "November",
+    "characters": "nN",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-o",
+    "spoken": "Oscar",
+    "characters": "oO",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-p",
+    "spoken": "Papa",
+    "characters": "pP",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-q",
+    "spoken": "Quebec",
+    "characters": "qQ",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-r",
+    "spoken": "Romeo",
+    "characters": "rR",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-s",
+    "spoken": "Sierra",
+    "characters": "sS",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-t",
+    "spoken": "Tango",
+    "characters": "tT",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-u",
+    "spoken": "Uniform",
+    "characters": "uU",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-v",
+    "spoken": "Victor",
+    "characters": "vV",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-w",
+    "spoken": "Whiskey",
+    "characters": "wW",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-x",
+    "spoken": "X-ray",
+    "characters": "xX",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-y",
+    "spoken": "Yankee",
+    "characters": "yY",
+    "group": "alphabet"
+  },
+  {
+    "id": "letter-z",
+    "spoken": "Zulu",
+    "characters": "zZ",
+    "group": "alphabet"
+  },
+  {
+    "id": "number-0",
+    "spoken": "Zero",
+    "characters": "0",
+    "group": "numbers"
+  },
+  {
+    "id": "number-1",
+    "spoken": "One",
+    "characters": "1",
+    "group": "numbers"
+  },
+  {
+    "id": "number-2",
+    "spoken": "Two",
+    "characters": "2",
+    "group": "numbers"
+  },
+  {
+    "id": "number-3",
+    "spoken": "Three",
+    "characters": "3",
+    "group": "numbers"
+  },
+  {
+    "id": "number-4",
+    "spoken": "Four",
+    "characters": "4",
+    "group": "numbers"
+  },
+  {
+    "id": "number-5",
+    "spoken": "Five",
+    "characters": "5",
+    "group": "numbers"
+  },
+  {
+    "id": "number-6",
+    "spoken": "Six",
+    "characters": "6",
+    "group": "numbers"
+  },
+  {
+    "id": "number-7",
+    "spoken": "Seven",
+    "characters": "7",
+    "group": "numbers"
+  },
+  {
+    "id": "number-8",
+    "spoken": "Eight",
+    "characters": "8",
+    "group": "numbers"
+  },
+  {
+    "id": "number-9",
+    "spoken": "Nine",
+    "characters": "9",
+    "group": "numbers"
+  },
+  {
+    "id": "symbol-0021",
+    "spoken": "Exclamation mark",
+    "characters": "!",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0022",
+    "spoken": "Double quote",
+    "characters": "\"",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0023",
+    "spoken": "Hash",
+    "characters": "#",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0024",
+    "spoken": "Dollar sign",
+    "characters": "$",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0025",
+    "spoken": "Percent",
+    "characters": "%",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0026",
+    "spoken": "Ampersand",
+    "characters": "&",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0027",
+    "spoken": "Apostrophe",
+    "characters": "'",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0028",
+    "spoken": "Left parenthesis",
+    "characters": "(",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0029",
+    "spoken": "Right parenthesis",
+    "characters": ")",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-002a",
+    "spoken": "Asterisk",
+    "characters": "*",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-002b",
+    "spoken": "Plus",
+    "characters": "+",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-002c",
+    "spoken": "Comma",
+    "characters": ",",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-002d",
+    "spoken": "Minus",
+    "characters": "-",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-002e",
+    "spoken": "Period",
+    "characters": ".",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-002f",
+    "spoken": "Slash",
+    "characters": "/",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-003a",
+    "spoken": "Colon",
+    "characters": ":",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-003b",
+    "spoken": "Semicolon",
+    "characters": ";",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-003c",
+    "spoken": "Less than",
+    "characters": "<",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-003d",
+    "spoken": "Equals",
+    "characters": "=",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-003e",
+    "spoken": "Greater than",
+    "characters": ">",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-003f",
+    "spoken": "Question mark",
+    "characters": "?",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0040",
+    "spoken": "At sign",
+    "characters": "@",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-005b",
+    "spoken": "Left bracket",
+    "characters": "[",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-005c",
+    "spoken": "Backslash",
+    "characters": "\\",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-005d",
+    "spoken": "Right bracket",
+    "characters": "]",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-005e",
+    "spoken": "Caret",
+    "characters": "^",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-005f",
+    "spoken": "Underscore",
+    "characters": "_",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-0060",
+    "spoken": "Backtick",
+    "characters": "`",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-007b",
+    "spoken": "Left brace",
+    "characters": "{",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-007c",
+    "spoken": "Vertical bar",
+    "characters": "|",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-007d",
+    "spoken": "Right brace",
+    "characters": "}",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-007e",
+    "spoken": "Tilde",
+    "characters": "~",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00a3",
+    "spoken": "Pound sign",
+    "characters": "£",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-20ac",
+    "spoken": "Euro sign",
+    "characters": "€",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00a5",
+    "spoken": "Yen sign",
+    "characters": "¥",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00a2",
+    "spoken": "Cent sign",
+    "characters": "¢",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00b0",
+    "spoken": "Degree sign",
+    "characters": "°",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00d7",
+    "spoken": "Multiplication sign",
+    "characters": "×",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00f7",
+    "spoken": "Division sign",
+    "characters": "÷",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00a9",
+    "spoken": "Copyright",
+    "characters": "©",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00ae",
+    "spoken": "Registered trademark",
+    "characters": "®",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00a7",
+    "spoken": "Section sign",
+    "characters": "§",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00b6",
+    "spoken": "Paragraph sign",
+    "characters": "¶",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00a1",
+    "spoken": "Inverted exclamation mark",
+    "characters": "¡",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00bf",
+    "spoken": "Inverted question mark",
+    "characters": "¿",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00ac",
+    "spoken": "Not sign",
+    "characters": "¬",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00b1",
+    "spoken": "Plus or minus",
+    "characters": "±",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00b5",
+    "spoken": "Micro sign",
+    "characters": "µ",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00b7",
+    "spoken": "Middle dot",
+    "characters": "·",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00ab",
+    "spoken": "Left guillemet",
+    "characters": "«",
+    "group": "punctuation"
+  },
+  {
+    "id": "symbol-00bb",
+    "spoken": "Right guillemet",
+    "characters": "»",
+    "group": "punctuation"
+  },
+  {
+    "id": "control-backspace",
+    "spoken": "Backspace",
+    "control": "Backspace",
+    "group": "controls"
+  },
+  {
+    "id": "control-tab",
+    "spoken": "Tab",
+    "control": "Tab",
+    "group": "controls"
+  },
+  {
+    "id": "control-clear",
+    "spoken": "Clear",
+    "control": "Clear",
+    "group": "controls"
+  },
+  {
+    "id": "control-enter",
+    "spoken": "Enter",
+    "control": "Enter",
+    "group": "controls"
+  },
+  {
+    "id": "control-shift",
+    "spoken": "Shift",
+    "control": "Shift",
+    "group": "controls"
+  },
+  {
+    "id": "control-control",
+    "spoken": "Control",
+    "control": "Ctrl",
+    "group": "controls"
+  },
+  {
+    "id": "control-alt",
+    "spoken": "Alt",
+    "pronunciation": "ault",
+    "control": "Alt",
+    "group": "controls"
+  },
+  {
+    "id": "control-pause",
+    "spoken": "Pause",
+    "control": "Pause",
+    "group": "controls"
+  },
+  {
+    "id": "control-caps-lock",
+    "spoken": "Caps Lock",
+    "control": "Caps Lock",
+    "group": "controls"
+  },
+  {
+    "id": "control-escape",
+    "spoken": "Escape",
+    "control": "Esc",
+    "group": "controls"
+  },
+  {
+    "id": "control-space",
+    "spoken": "Space",
+    "control": "Space",
+    "group": "controls"
+  },
+  {
+    "id": "control-page-up",
+    "spoken": "Page Up",
+    "control": "Page Up",
+    "group": "controls"
+  },
+  {
+    "id": "control-page-down",
+    "spoken": "Page Down",
+    "control": "Page Down",
+    "group": "controls"
+  },
+  {
+    "id": "control-end",
+    "spoken": "End",
+    "control": "End",
+    "group": "controls"
+  },
+  {
+    "id": "control-home",
+    "spoken": "Home",
+    "control": "Home",
+    "group": "controls"
+  },
+  {
+    "id": "control-left-arrow",
+    "spoken": "Left arrow",
+    "control": "Left",
+    "group": "controls"
+  },
+  {
+    "id": "control-up-arrow",
+    "spoken": "Up arrow",
+    "control": "Up",
+    "group": "controls"
+  },
+  {
+    "id": "control-right-arrow",
+    "spoken": "Right arrow",
+    "control": "Right",
+    "group": "controls"
+  },
+  {
+    "id": "control-down-arrow",
+    "spoken": "Down arrow",
+    "control": "Down",
+    "group": "controls"
+  },
+  {
+    "id": "control-print-screen",
+    "spoken": "Print screen",
+    "control": "Print Scr",
+    "group": "controls"
+  },
+  {
+    "id": "control-insert",
+    "spoken": "Insert",
+    "control": "Insert",
+    "group": "controls"
+  },
+  {
+    "id": "control-delete",
+    "spoken": "Delete",
+    "control": "Delete",
+    "group": "controls"
+  },
+  {
+    "id": "control-super",
+    "spoken": "Super",
+    "control": "Super",
+    "group": "controls"
+  },
+  {
+    "id": "control-menu",
+    "spoken": "Menu",
+    "control": "Menu",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-one",
+    "spoken": "F one",
+    "control": "F1",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-two",
+    "spoken": "F two",
+    "control": "F2",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-three",
+    "spoken": "F three",
+    "control": "F3",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-four",
+    "spoken": "F four",
+    "control": "F4",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-five",
+    "spoken": "F five",
+    "control": "F5",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-six",
+    "spoken": "F six",
+    "control": "F6",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-seven",
+    "spoken": "F seven",
+    "control": "F7",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-eight",
+    "spoken": "F eight",
+    "control": "F8",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-nine",
+    "spoken": "F nine",
+    "control": "F9",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-ten",
+    "spoken": "F ten",
+    "control": "F10",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-eleven",
+    "spoken": "F eleven",
+    "control": "F11",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-twelve",
+    "spoken": "F twelve",
+    "control": "F12",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-thirteen",
+    "spoken": "F thirteen",
+    "control": "F13",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-fourteen",
+    "spoken": "F fourteen",
+    "control": "F14",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-fifteen",
+    "spoken": "F fifteen",
+    "control": "F15",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-sixteen",
+    "spoken": "F sixteen",
+    "control": "F16",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-seventeen",
+    "spoken": "F seventeen",
+    "control": "F17",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-eighteen",
+    "spoken": "F eighteen",
+    "control": "F18",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-nineteen",
+    "spoken": "F nineteen",
+    "control": "F19",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-twenty",
+    "spoken": "F twenty",
+    "control": "F20",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-twenty-one",
+    "spoken": "F twenty-one",
+    "control": "F21",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-twenty-two",
+    "spoken": "F twenty-two",
+    "control": "F22",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-twenty-three",
+    "spoken": "F twenty-three",
+    "control": "F23",
+    "group": "controls"
+  },
+  {
+    "id": "control-f-twenty-four",
+    "spoken": "F twenty-four",
+    "control": "F24",
+    "group": "controls"
+  },
+  {
+    "id": "control-num-lock",
+    "spoken": "Num Lock",
+    "control": "Num Lock",
+    "group": "controls"
+  },
+  {
+    "id": "control-scroll-lock",
+    "spoken": "Scroll Lock",
+    "control": "Scroll Lock",
+    "group": "controls"
+  },
+  {
+    "id": "control-mute",
+    "spoken": "Mute",
+    "control": "Mute",
+    "group": "controls"
+  },
+  {
+    "id": "control-volume-down",
+    "spoken": "Volume down",
+    "control": "Volume -",
+    "group": "controls"
+  },
+  {
+    "id": "control-volume-up",
+    "spoken": "Volume up",
+    "control": "Volume +",
+    "group": "controls"
+  },
+  {
+    "id": "control-next-track",
+    "spoken": "Next track",
+    "control": "Next",
+    "group": "controls"
+  },
+  {
+    "id": "control-previous-track",
+    "spoken": "Previous track",
+    "control": "Previous",
+    "group": "controls"
+  },
+  {
+    "id": "control-stop",
+    "spoken": "Stop",
+    "control": "Stop",
+    "group": "controls"
+  },
+  {
+    "id": "control-play-pause",
+    "spoken": "Play pause",
+    "control": "Play",
+    "group": "controls"
+  },
+  {
+    "id": "unknown-character",
+    "spoken": "Unknown character",
+    "group": "other"
+  }
+]

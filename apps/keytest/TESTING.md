@@ -4,11 +4,11 @@
 
 - `mise.toml` pins Zig, just, Nushell, and Bun; `bun.lock` locks script dependencies.
 - `just check` builds and audits the XP executable, checks Zig/justfile formatting,
-  and passes two Zig input tests plus six Bun build-audit and packaging tests.
+  and passes four Zig input/speech tests plus nine Bun build-audit, packaging, and audio tests.
 - Bun regression tests reject newer Windows subsystem requirements, unreviewed
   imports, missing resources, and malformed icon mask data. The ZIP test verifies
   its executable and documentation match the current build and sources.
-- GitHub Actions passed the same checks on Ubuntu and uploaded the portable ZIP
+- GitHub Actions passed the original build and packaging checks on Ubuntu and uploaded the portable ZIP
   for commit `4161ed8` ([run](https://github.com/jeremybanka/xp32/actions/runs/35838905159)).
 - GUI validation below describes the app revision; the separate font update is described below.
 
@@ -63,6 +63,33 @@ the user's modified NonameSans-Web.otf export, which adds an ampersand.
   then Shift+7 rendered the custom ampersand in white on orange. The OTF loaded
   successfully without a font substitution error. Input capture remains off.
 
+## Spoken key feedback
+
+- Replaced the rejected letter-name/cropped-syllable experiments with 145 whole
+  Kokoro utterances: NATO words, numbers, punctuation, and control-key names.
+- Every clip is embedded in the standalone executable. Current PE audit passes
+  with 48 imports; the only additional DLL/API is the XP-era
+  `winmm.dll!PlaySoundA`. The package requires no external audio files.
+- Four Zig tests cover visual categories and speech routing, including every
+  printable ASCII character and every supported control label, shifted symbols,
+  repeat suppression, and no duplicate Space announcement.
+- Nine Bun tests cover PE auditing, packaging, PCM validity, dictionary/hash
+  consistency, generated-index freshness, and all embedded audio bytes.
+- Playback is asynchronous, replaces earlier speech, and stops on deactivation
+  and exit. Hook-only Windows/Print Screen keys post audio work to the window.
+- Live Computer/UTM check on September 23, 2026: mounted the new 10.8 MB ISO,
+  closed two older Keytest instances, and launched a single fresh `D:\keytest.exe`.
+  Confirmed fullscreen at 1024 × 768, b/blue, a/cyan, 7/red, ampersand/orange,
+  Control/green, and Space/green. Alt-Tab restored the desktop and returning
+  restored full display coverage. Input capture is released; the app is open.
+- Audible output, repeat suppression, and interruption timing still need a
+  listening check. The Computer tool returns screenshots and input state, not
+  audio; no audible-pass claim is made from the visual check. Speech routing
+  and PCM embedding are covered by the automated tests above.
+
+- Naming update: both Windows-key positions now display and say "Super".
+  The regenerated clip, embedded index, XP build, and all 13 tests pass.
+
 ## Regression checklist
 
 1. Launch at 1024 × 768: borderless full coverage, no desktop/taskbar visible,
@@ -74,7 +101,13 @@ the user's modified NonameSans-Web.otf export, which adds an ampersand.
    coverage, centered text and working input after every return.
 5. Change the XP resolution while the app is minimized, then return. Confirm
    window, canvas and font adopt the new dimensions.
-6. Quit with Alt+F4. Confirm XP's resolution and color depth stay unchanged.
+6. Check spoken Alfa, Bravo, Delta, Papa, Seven, Ampersand, Shift, Control, Enter,
+   Space, Left arrow, and F12. Confirm Windows/Print Screen speech when received.
+7. Hold a letter and a modifier: speech should play once per physical press.
+   Quickly press two different keys: the latest should replace the first.
+8. Alt-Tab during speech: audio should stop. Return and verify speech resumes
+   on the next press. Quit with Alt+F4; confirm audio stops and XP's resolution
+   and color depth stay unchanged.
 
 ## Earlier build
 

@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 // minimum Windows version. In particular, display-mode switching is absent.
 const allowed = new Map(Object.entries({
   "kernel32.dll": "ExitProcess GetModuleHandleW",
+  "winmm.dll": "PlaySoundA",
   "user32.dll": `BeginPaint CallNextHookEx CreateWindowExW DefWindowProcW
     DestroyWindow DispatchMessageW DrawTextW EndPaint FillRect GetDC
     GetForegroundWindow GetClientRect GetSystemMetrics GetKeyState GetMessageW

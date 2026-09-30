@@ -1,8 +1,10 @@
 const std = @import("std");
 const w = @import("win32");
 const keys = @import("keys.zig");
+const speech = @import("speech.zig");
 const wide = std.unicode.utf8ToUtf16LeStringLiteral;
 const wm_fit_fullscreen = 0x8000; // WM_APP: run after Windows finishes restoring.
+const wm_hook_key = 0x8001;
 const font_data = @embedFile("assets/noname-sans.otf");
 const font_name = wide("Noname Sans Web");
 
@@ -14,6 +16,7 @@ var canvas: w.HDC = null;
 var bitmap: w.HANDLE = null;
 var old_bitmap: w.HANDLE = null;
 var keyboard_hook: w.HANDLE = null;
+var hook_keys_down: [3]bool = @splat(false);
 var canvas_width: i32 = 0;
 var canvas_height: i32 = 0;
 var fit_queued = false;
@@ -48,6 +51,7 @@ fn fitFullscreen(hwnd: w.HWND) void {
 
 fn cleanup() void {
     quitting = true;
+    _ = w.PlaySoundA(null, null, 0);
     if (keyboard_hook != null) _ = w.UnhookWindowsHookEx(keyboard_hook);
     if (canvas != null) {
         if (old_bitmap != null) _ = w.SelectObject(canvas, old_bitmap);
@@ -56,6 +60,14 @@ fn cleanup() void {
     if (bitmap != null) _ = w.DeleteObject(bitmap);
     if (large_font != null) _ = w.DeleteObject(large_font);
     if (font_resource != null) _ = w.RemoveFontMemResourceEx(font_resource);
+}
+
+fn speak(clip: ?*const speech.Clip) void {
+    if (clip) |sound| {
+        // SND_ASYNC | SND_NODEFAULT | SND_MEMORY. Embedded buffers live for the
+        // entire process. A fresh press replaces the previous sound; no queue.
+        _ = w.PlaySoundA(sound.wav.ptr, null, 0x0007);
+    }
 }
 
 fn fail(message: [*:0]const u16) noreturn {
@@ -143,13 +155,27 @@ fn paint(hwnd: w.HWND) void {
 }
 
 fn keyboardHook(code: i32, message: usize, data: isize) callconv(.winapi) isize {
-    if (code >= 0 and window != null and w.GetForegroundWindow() == window) {
+    if (code >= 0 and window != null) {
         const event: *const w.KBDLLHOOKSTRUCT = @ptrFromInt(@as(usize, @bitCast(data)));
-        if (event.vkCode == 0x5B or event.vkCode == 0x5C) {
-            if (message == 0x100 or message == 0x104) setLabel("Win");
-            return 1; // Only while this window is foreground: keep Start offscreen.
+        const index: ?usize = switch (event.vkCode) {
+            0x5B => 0,
+            0x5C => 1,
+            0x2C => 2,
+            else => null,
+        };
+        if (index) |i| {
+            if (message == 0x101 or message == 0x105) hook_keys_down[i] = false;
+            if (w.GetForegroundWindow() == window) {
+                if (message == 0x100 or message == 0x104) {
+                    if (!hook_keys_down[i]) {
+                        // Keep audio work outside the low-level hook callback.
+                        _ = w.PostMessageW(window, wm_hook_key, event.vkCode, 0);
+                    }
+                    hook_keys_down[i] = true;
+                }
+                if (i < 2) return 1; // Keep Start offscreen only while foreground.
+            }
         }
-        if (event.vkCode == 0x2C and message == 0x100) setLabel("Print Scr");
     }
     return w.CallNextHookEx(keyboard_hook, code, message, data);
 }
@@ -174,16 +200,20 @@ fn windowProc(hwnd: w.HWND, message: u32, wp: usize, lp: isize) callconv(.winapi
                 return 0;
             }
             if (keys.controlLabel(wp)) |label| setLabel(label);
+            speak(speech.forMessage(message, wp, lp));
             return 0;
         },
         0x0102, 0x0106 => { // WM_CHAR / WM_SYSCHAR: layout, Shift and Caps Lock aware.
             if (wp <= 0xFFFF) setGlyph(@intCast(wp));
+            speak(speech.forMessage(message, wp, lp));
             return 0;
         },
         0x0103, 0x0107 => return 0, // Dead keys wait for composition.
         0x0006 => { // WM_ACTIVATE
             if (!quitting and window != null) {
                 if (wp & 0xFFFF == 0) {
+                    _ = w.PlaySoundA(null, null, 0);
+                    hook_keys_down = @splat(false);
                     _ = w.ShowWindow(hwnd, 6); // SW_MINIMIZE
                 } else {
                     requestFullscreen(hwnd);
@@ -203,6 +233,13 @@ fn windowProc(hwnd: w.HWND, message: u32, wp: usize, lp: isize) callconv(.winapi
         wm_fit_fullscreen => {
             fit_queued = false;
             fitFullscreen(hwnd);
+            return 0;
+        },
+        wm_hook_key => {
+            if (!quitting and w.GetForegroundWindow() == hwnd) {
+                if (keys.controlLabel(wp)) |label| setLabel(label);
+                speak(speech.forControl(wp));
+            }
             return 0;
         },
         0x0010 => { // WM_CLOSE
